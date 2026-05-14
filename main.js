@@ -106,22 +106,22 @@ document.addEventListener('DOMContentLoaded', () => {
     Hokkien: { 
         title: "You are the Hokkien Zhongzi - The Stalwart!",
         description: "You are a pillar of strength and tradition. Reliable and deeply rooted in your values, you are a source of comfort and stability for those around you. You believe in doing things the right way and cherish history.",
-        img: "hokkien_zhongzi.png"
+        img: "Hokkien_Zhongzi.png"
     },
     Nonya: { 
         title: "You are the Nonya Zhongzi - The Creative!", 
         description: "You have a vibrant and innovative spirit. You love to blend different ideas, cultures, and experiences to create something new and beautiful. Your unique perspective is your greatest asset.",
-        img: "nonya_zhongzi.png"
+        img: "Nonya_Zhongzi.png"
     },
     Cantonese: { 
         title: "You are the Cantonese Zhongzi - The Extravagant!",
         description: "You have a taste for the finer things in life and a generous heart. You believe in celebrating life to the fullest and sharing your abundance with others. You are a natural host and a magnanimous friend.",
-        img: "cantonese_zhongzi.png"
+        img: "Cantonese_Zhongzi.png"
     },
     Teochew: { 
         title: "You are the Teochew Zhongzi - The Balanced!",
         description: "You seek harmony and balance in all aspects of your life. You are a thoughtful and diplomatic person, able to see multiple perspectives and find a middle ground. You bring people together.",
-        img: "teochew_zhongzi.png"
+        img: "Teochew_Zhongzi.png"
     },
     "Kee Zhang": { 
         title: "You are the Kee Zhang - The Pure!",
