@@ -1,1 +1,200 @@
-/* Add styles here */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Roboto&display=swap');
+
+:root {
+  --background-color: #FFF9E6;
+  --card-background: #FFFFFF;
+  --text-color: #5C4033;
+  --header-color: #FF7F50;
+  --shadow-color: rgba(92, 64, 51, 0.1);
+  --button-background: #FF7F50;
+  --button-text-color: #FFFFFF;
+  --button-hover-background: #FF9F7A;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  text-align: center;
+}
+
+header {
+  padding: 2rem 1rem;
+}
+
+h1 {
+  font-family: 'Fredoka One', cursive;
+  font-size: 3.5rem;
+  color: var(--header-color);
+  margin: 0;
+  text-shadow: 2px 2px var(--shadow-color);
+}
+
+main {
+  padding: 2rem 1rem;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card {
+  background-color: var(--card-background);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px var(--shadow-color);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px var(--shadow-color);
+}
+
+.card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.card h2 {
+  font-family: 'Fredoka One', cursive;
+  font-size: 1.8rem;
+  color: var(--header-color);
+  margin: 1.5rem 0 0.5rem 0;
+}
+
+.card p {
+  margin: 0.5rem 0 0 0;
+  line-height: 1.6;
+}
+
+/* Quiz Styles */
+.quiz-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: var(--card-background);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px var(--shadow-color);
+}
+
+#question {
+  font-family: 'Fredoka One', cursive;
+  font-size: 2.2rem;
+  color: var(--header-color);
+  margin-bottom: 2rem;
+}
+
+.answers-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.answer-btn {
+  background-color: var(--button-background);
+  color: var(--button-text-color);
+  border: none;
+  padding: 1rem;
+  border-radius: 15px;
+  font-size: 1.1rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  text-align: center;
+}
+
+.answer-btn:hover {
+  background-color: var(--button-hover-background);
+  transform: scale(1.02);
+}
+
+.start-quiz-container {
+  margin-top: 2rem;
+}
+
+.start-quiz-btn {
+  background-color: var(--button-background);
+  color: var(--button-text-color);
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 15px;
+  font-size: 1.5rem;
+  font-family: 'Fredoka One', cursive;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  box-shadow: 0 5px 15px var(--shadow-color);
+}
+
+.start-quiz-btn:hover {
+  background-color: var(--button-hover-background);
+  transform: translateY(-3px);
+}
+
+.result-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: var(--card-background);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px var(--shadow-color);
+}
+
+.result-container h2 {
+  font-family: 'Fredoka One', cursive;
+  font-size: 2.8rem;
+  color: var(--header-color);
+}
+
+.result-img {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  border-radius: 20px;
+  margin: 1.5rem 0;
+}
+
+.result-container p {
+  font-size: 1.2rem;
+  line-height: 1.7;
+  max-width: 600px;
+  margin: 0 auto 2rem auto;
+}
+
+.result-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2.8rem;
+  }
+
+  .card-container {
+    grid-template-columns: 1fr;
+  }
+
+  .quiz-container, .result-container {
+    padding: 1.5rem;
+  }
+
+  #question {
+    font-size: 1.8rem;
+  }
+
+  .result-container h2 {
+    font-size: 2.2rem;
+  }
+}

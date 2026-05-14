@@ -3,12 +3,55 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hello World</title>
+  <title>The 5 Faces of Zhongzi</title>
   <link href='/style.css' rel='stylesheet'>
 </head>
 <body>
-  <h1>Hello, world!</h1>
-  <button onclick="console.log('hello');">Press me</button>
+  <header>
+    <h1>The 5 Faces of Zhongzi</h1>
+  </header>
+  <main>
+    <div class="card-container" style="display: none;">
+      <div class="card">
+        <img src="hokkien_zhongzi.png" alt="Hokkien Zhongzi">
+        <h2>Hokkien - The Stalwart</h2>
+        <p>Representing tradition and reliability, the Hokkien dumpling is known for its classic, savory flavors. It's the dependable choice, always satisfying and never disappointing.</p>
+      </div>
+      <div class="card">
+        <img src="nonya_zhongzi.png" alt="Nonya Zhongzi">
+        <h2>Nonya - The Creative</h2>
+        <p>A fusion of Chinese and Malay flavors, the Nonya dumpling is a testament to creativity and innovation. Its sweet and savory notes, often with a hint of pandan and a distinctive blue pea flower coloring, represent a beautiful blend of cultures.</p>
+      </div>
+      <div class="card">
+        <img src="cantonese_zhongzi.png" alt="Cantonese Zhongzi">
+        <h2>Cantonese - The Extravagant</h2>
+        <p>Packed with luxurious ingredients like salted egg yolk, chestnuts, and sometimes even abalone, the Cantonese dumpling embodies opulence and generosity. It's a celebration of abundance and a desire to share the best with loved ones.</p>
+      </div>
+      <div class="card">
+        <img src="teochew_zhongzi.png" alt="Teochew Zhongzi">
+        <h2>Teochew - The Balanced</h2>
+        <p>Known for its delicate balance of flavors, often with a mix of savory pork and sweet paste, the Teochew dumpling represents harmony and moderation. It's a reminder that a well-balanced life is a fulfilling one.</p>
+      </div>
+      <div class="card">
+        <img src="kee_zhang_zhongzi.png" alt="Kee Zhang Zhongzi">
+        <h2>Kee Zhang - The Pure</h2>
+        <p>This simple, elegant dumpling, made with just glutinous rice and lye water, is a symbol of purity and simplicity. Its subtle sweetness, often enjoyed with a dip of sugar or Gula Melaka, reminds us that beauty can be found in the simplest of things.</p>
+      </div>
+    </div>
+    <div class="quiz-container" id="quiz" style="display: none;">
+      <h2 id="question">Question</h2>
+      <div id="answers" class="answers-grid">
+          <!-- Answers will be dynamically inserted here -->
+      </div>
+  </div>
+  <div id="result" class="result-container" style="display: none;">
+      <!-- Result will be shown here -->
+  </div>
+  <div class="start-quiz-container">
+    <button id="start-quiz-btn" class="start-quiz-btn">What kind of Zongzi are you? Take the quiz!</button>
+  </div>
+  
+  </main>
   <script defer type="text/javascript" src="/main.js"></script>
 </body>
 </html>
